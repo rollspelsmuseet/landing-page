@@ -76,26 +76,28 @@ hr {
   height: 1px;
 }
 
-header {
+.header {
   background: #F7F7F7;
-  font-size: 13px;
-  margin-bottom: 3em;
-  padding: .5em;
+  border-bottom: 1px solid #DDD;
+  line-height: 50px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
 }
 
-header p {
+.header div {
+  font-size: 13px;
   margin: 0 auto;
   max-width: 420px;
+  position: relative;
 }
 
-header a {
-  border: 0 !important;
-  display: inline-block;
-  margin: 0 .25em;
+.header img {
+  float: left;
+  margin: 5px 1em 0 0;
+}
+
+.header a:visited {
+  color: #4787ED;
 }
 
 aside {
@@ -105,10 +107,10 @@ aside {
 
 </style>
 
-<header>
-  <p>
-    <a href="/" rel="home">Rollspelsmuseet</a> — <a>Förord</a> — <a href="https://twitter.com/rollspelsmuseet">Twitter</a> — <a href="mailto:info@rollspelsmuseet.se">Kontakt</a>
-  </p>
+<header class="header">
+  <div>
+    <a href="/" rel="home"><img src="/assets/images/rm-logo@2x.png" alt="Rollspelsmuseet" height="40" width="40"></a> <a>Förord</a> — <a href="https://twitter.com/rollspelsmuseet">Twitter</a> — <a href="mailto:info@rollspelsmuseet.se">Kontakt</a>
+  </div>
 </header>
 
 <article>
